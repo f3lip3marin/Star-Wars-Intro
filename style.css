@@ -1,0 +1,47 @@
+/*start*/
+
+
+@keyframes introStarWars{
+    0%{
+        transform: perspective(100vh) rotateX(15deg) translateY(100%);
+    }
+    100%{
+        transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+    }
+
+}
+
+body{
+    margin: 0;
+}
+.star-wars{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffb13a;
+    background-image: url(./img/stars.gif);
+}
+
+.star-wars-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: .1rem;
+    animation: introStarWars 20s linear infinite;
+}
+
+.star-wars h2,
+.star-wars h3 {
+    font-size: 2.1rem;
+    text-align: center;
+
+}
+
+.star-wars p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
